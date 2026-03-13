@@ -264,7 +264,7 @@ p {
 }
 .practice .practice-card {
   background: #ffffff;
-  padding: 35px 28px;
+  padding: 20px 28px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
   flex: 1;
   transition: 0.3s;
@@ -273,9 +273,12 @@ p {
   transform: translateY(-8px);
 }
 .practice .practice-card .icon {
-  font-size: 34px;
   margin-bottom: 20px;
-  color: #0c5475;
+}
+.practice .practice-card .icon img {
+  width: 50px;
+  height: auto;
+  display: block;
 }
 .practice .practice-card h3 {
   font-size: 23px;

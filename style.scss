@@ -253,7 +253,7 @@ p {
 
   .practice-card {
     background: $white;
-    padding: 35px 28px;
+    padding: 20px 28px;
     box-shadow: $shadow;
     flex: 1;
     transition: 0.3s;
@@ -263,10 +263,14 @@ p {
     }
 
     .icon {
-      font-size: 34px;
-      margin-bottom: 20px;
-      color: $primary;
-    }
+  margin-bottom: 20px;
+
+  img{
+    width: 50px;
+    height: auto;
+    display: block;
+  }
+}
 
     h3 {
       font-size: 23px;
@@ -428,7 +432,6 @@ p {
     }
   }
 
-  // @for used here too
   @for $i from 1 through 3 {
     .article-card:nth-child(#{$i}) {
       transition-delay: $i * 0.08s;
