@@ -1,0 +1,34 @@
+$colors: red, blue, green, black,white;
+$displays: inline, block, none, grid, flex;
+
+$colorMap: (
+    myred: #ce1d1d,
+    myblue: #133db2,
+    mygreen: #17ce32
+);
+
+@for $i from 1 through 100{
+    .text-#{$i}{
+        font-size: #{$i}px;
+    }
+    .m-#{$i}{
+        margin: #{$i * 5}px;
+    }
+}
+
+@each $i in $colors{
+    .text-#{$i}{
+        color: $i;
+    }
+    .bg-#{$i}{
+        background-color: $i;
+    }
+}
+@each $i in $displays{
+    .#{$i}{
+        display: $i;
+    }
+}
+@each $i, $j in $colorMap{
+    
+}
